@@ -37,3 +37,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Force Reinstall NumPy and Pandas
+      run: |
+        pip install --upgrade --force-reinstall numpy pandas
+
